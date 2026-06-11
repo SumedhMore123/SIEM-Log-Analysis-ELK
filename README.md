@@ -1,4 +1,3 @@
-# SIEM-Log-Analysis-ELK
 # Investigating with ELK: SOC Analyst Case Study
 
 ## Scenario
