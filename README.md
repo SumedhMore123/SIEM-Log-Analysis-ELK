@@ -81,7 +81,7 @@ To navigate the Elastic Stack environment, understand its data ingestion pipelin
   * **Top Targeted Account:** Through the failed attempts visualization, I successfully identified user **Simon** as the account experiencing the highest volume of failed login attempts, strongly indicating a targeted brute-force or credential stuffing attack.
   * **Failed Login Count:** Confirmed exactly **274** failed VPN connection attempts occurred during the month of January.
 
-`![VPN Visualizations](images/Screenshot%202026-06-12%20155737.png)`)*
+![VPN Visualizations](images/Screenshot%202026-06-12%20155737.png)
 ---
 ### Task 7: Dashboard Creation & Continuous Monitoring
 **Objective:** Consolidate individual visualizations and saved searches into a centralized dashboard for real-time VPN log monitoring and threat detection.
@@ -93,7 +93,7 @@ To navigate the Elastic Stack environment, understand its data ingestion pipelin
 * **Investigation Conclusion:** * Successfully built a functional, production-ready SOC dashboard capable of tracking VPN authentication spikes, isolating targeted users, and mapping malicious IP geographies. 
   * Demonstrated full-cycle SIEM capabilities: from understanding the raw data pipeline and executing KQL queries, to visualizing trends and establishing a continuous monitoring environment.
 
- `![Final SOC Dashboard](images/Screenshot%202026-06-12%20171248.png)`
+ ![Final SOC Dashboard](images/Screenshot%202026-06-12%20171248.png)
 
 ---
 ### Conclusion
