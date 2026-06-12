@@ -67,6 +67,6 @@ To navigate the Elastic Stack environment, understand its data ingestion pipelin
   * **Targeted User Correlation:** Executed a compound query to isolate US-based traffic for specific high-interest users. The query targeting the United States and users `James` or `Albert` successfully returned 161 precise connection events.
   * **Post-Termination Access Detected:** Investigated the account activity of user `Johny Brown`, who was officially terminated on January 1, 2022. By querying his username against events occurring after his termination date, the search revealed **1** VPN connection. This indicates a failure in the offboarding/account disablement process and represents a critical security incident.
 
-*(Note: Add a screenshot here showing the KQL search bar with your query for the terminated employee, along with the 1 hit returned: `![KQL Post-Termination Query](images/Screenshot 2026-06-12 142212.png)`)*
+![KQL Post-Termination Query](images/Screenshot%202026-06-12%20142212.png)
 
 ---
