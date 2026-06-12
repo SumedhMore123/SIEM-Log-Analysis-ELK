@@ -53,3 +53,20 @@ To navigate the Elastic Stack environment, understand its data ingestion pipelin
   * **Targeted Correlation:** Correlated user `Emanda`'s activity to find maximum hits originating from source IP `107.14.1.247`.
 
 *(Note: Add a screenshot of the clean table you created or the timeline spike here: `![Kibana Timeline Spike](images/timeline-spike.png)`)*
+
+---
+
+### Task 5: Threat Hunting with KQL (Kibana Query Language)
+**Objective:** Utilize KQL syntax to perform granular log filtering, isolate specific user activities, and detect unauthorized access attempts.
+* **Action:** Applied free-text searches, field-based parameters, and boolean logic to execute targeted queries against the VPN log dataset.
+* **Process & Techniques:**
+  * **Free-Text & Wildcards:** Utilized broad terms and wildcards (e.g., `*`) to perform wide-net searches across all indexed document fields.
+  * **Field-Based Filtering:** Narrowed the scope of the investigation by querying specific key-value pairs (e.g., `Source_ip: 238.163.231.224`).
+  * **Logical Operators:** Chained conditions using `AND`, `OR`, and `NOT` to build complex, highly specific queries to filter out benign traffic.
+* **Investigation Findings:**
+  * **Targeted User Correlation:** Executed a compound query to isolate US-based traffic for specific high-interest users. The query targeting the United States and users `James` or `Albert` successfully returned 161 precise connection events.
+  * **Post-Termination Access Detected:** Investigated the account activity of user `Johny Brown`, who was officially terminated on January 1, 2022. By querying his username against events occurring after his termination date, the search revealed **1** VPN connection. This indicates a failure in the offboarding/account disablement process and represents a critical security incident.
+
+*(Note: Add a screenshot here showing the KQL search bar with your query for the terminated employee, along with the 1 hit returned: `![KQL Post-Termination Query](images/kql-insider-threat.png)`)*
+
+---
