@@ -52,7 +52,7 @@ To navigate the Elastic Stack environment, understand its data ingestion pipelin
   * **Spike Attribution:** Traced the anomalous log spike on January 11th directly to source IP `172.201.60.191`.
   * **Targeted Correlation:** Correlated user `Emanda`'s activity to find maximum hits originating from source IP `107.14.1.247`.
 
-*(Note: Add a screenshot of the clean table you created or the timeline spike here: `![Kibana Timeline Spike](images/timeline-spike.png)`)*
+![Kibana Timeline Spike](images/timeline-splike.png)
 
 ---
 
